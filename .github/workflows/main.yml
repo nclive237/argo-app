@@ -69,7 +69,7 @@ jobs:
           pwd
           cat deployment.yaml
           pwd
-          sed -i "s+nclive/repo2.*+nclive/repo2:app-$RUN_NUMBER+g" deployment.yaml
+          sed -i "s+nclive/repo2.*+nclive/repo2:app-$RUN_NUMBER+g" deploy.yaml
           cat deployment.yaml
           git add .
           git commit -m 'Done  by Github Actions   Job changemanifest: ${{ github.run_number }}'
